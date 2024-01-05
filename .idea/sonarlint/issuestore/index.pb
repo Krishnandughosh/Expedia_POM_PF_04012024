@@ -25,8 +25,6 @@ $src/test/java/expedia/Demo_Test.java,8\c\8c1f6a945cb958e50cfba598c7edb76287ceb
 ,src/test/java/expedia/FlightSearch_Test.java,3\0\30533a3abcb1ffa1e7958a67bceceb1d9e8a19db
 Z
 *src/test/java/expedia/StaySearch_Test.java,4\a\4a68eb789dade0a211e44d60eb356a1a9ea01dae
-S
-#src/test/java/expedia/TestBase.java,c\b\cb3cf6bdf2210f51b9ab6aa349afd2e10c6a68fe
 ^
 .src/main/java/carsguide/base/GlobalConfig.java,0\0\00d83742acac5a39ac4ee67c670adafd51e02df3
 Z
@@ -53,5 +51,7 @@ _
 /src/test/java/carsguide/UsedCarSearch_Test.java,3\3\3369e4e50ff4325e3b3e04e35f022b9a725a4e26
 Y
 )src/main/java/carsguide/utilis/rough.java,f\5\f502cce0caa84e737d04eb5d92ef9aa3c73a26a9
-Z
-*src/test/java/carsguide_test/TestBase.java,1\0\1033ecd7ae4214602f82ec04e6f6ed7c97d22610
+^
+.src/main/java/expedia/utilis/AllureConfig.java,b\d\bd56b901dd769856868fa114c79a64e9b9f762e9
+b
+2src/main/java/carsguide/utilis/AllureAppender.java,d\0\d08a05fb734ed661afe646f767913e8e7b46a6b3

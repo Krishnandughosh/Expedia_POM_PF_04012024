@@ -1,6 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite">
-    <test name="Test">
-        <packages> <package name="carsguide"></package></packages>
+<suite name="CarGuide POM with Page Factory">
+    <test name="Functional Test">
+        <packages>
+            <package name="carsguide"></package>
+        </packages>
     </test>
 </suite>
