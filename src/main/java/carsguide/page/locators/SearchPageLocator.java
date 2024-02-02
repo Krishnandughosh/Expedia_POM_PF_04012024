@@ -10,13 +10,13 @@ import java.util.List;
 public class SearchPageLocator {
   @FindBy(how = How.XPATH, using = "//h1")
   public WebElement searchPageHeader;
-  @FindBy(how = How.XPATH, using = "//select[@id='makes']")
+  @FindBy(how = How.XPATH, using = "//div[@class='dropdown']//select[@id='make']")
   public WebElement makes;
-  @FindBy(how = How.XPATH, using = "//select[@id='models'] ")
+  @FindBy(how = How.XPATH, using = "//div[@class='dropdown']//select[@id='model'] ")
   public WebElement models;
-  @FindBy(how = How.XPATH, using = "//select[@id='locations']")
+  @FindBy(how = How.XPATH, using = "//div[@class='dropdown']//select[@id='location']")
   public WebElement location;
-  @FindBy(how = How.XPATH, using = "//input[@id='search-submit']")
+  @FindBy(how = How.XPATH, using = "//button[contains(text(),'vehicles')]")
   public WebElement searchButton;
 
   @FindBy( how= How.XPATH,using="//select[@id='models']/option")

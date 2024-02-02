@@ -51,7 +51,3 @@ _
 /src/test/java/carsguide/UsedCarSearch_Test.java,3\3\3369e4e50ff4325e3b3e04e35f022b9a725a4e26
 Y
 )src/main/java/carsguide/utilis/rough.java,f\5\f502cce0caa84e737d04eb5d92ef9aa3c73a26a9
-^
-.src/main/java/expedia/utilis/AllureConfig.java,b\d\bd56b901dd769856868fa114c79a64e9b9f762e9
-b
-2src/main/java/carsguide/utilis/AllureAppender.java,d\0\d08a05fb734ed661afe646f767913e8e7b46a6b3

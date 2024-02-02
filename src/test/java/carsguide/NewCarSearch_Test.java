@@ -13,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static java.lang.Thread.sleep;
+
 @Slf4j
 @Feature("NewCarSearch")
 @Story("NewCarSearch_Test")

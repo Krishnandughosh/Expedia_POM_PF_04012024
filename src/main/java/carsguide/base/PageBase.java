@@ -8,10 +8,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static carsguide.base.GlobalConfig.browser;
+import static carsguide.base.GlobalConfig.explicteWaitTimeOut;
 import static carsguide.base.GlobalConfig.impliciteWaitTimeOut;
 import static carsguide.base.GlobalConfig.url;
 
@@ -45,9 +49,15 @@ public class PageBase {
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(impliciteWaitTimeOut, TimeUnit.SECONDS);
   }
+  public static WebElement waitClickable(WebElement element) {
+    Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(explicteWaitTimeOut));
+    wait.until(d -> element.isEnabled());
+    return element;
+  }
 
   public static void click(WebElement element) {
-    element.click();
+    waitClickable(element).click();
+//    element.click();
     log.info("Clicking on an Element : " + element);
   }
 
@@ -75,9 +85,16 @@ public class PageBase {
   }
 
   public static void selectDropDown(WebElement element, String value) {
+    click(element);
     Select selectData = new Select(element);
-    selectData.selectByValue(value);
+    selectData.selectByVisibleText(value);
     log.info("Selecting from DropDown :: " + element + " with value " + value);
+
+    /*WebElement dropDown= driver.findElement(By.id("test"));
+    Select selectData= new Select(dropDown);
+    selectData.selectByVisibleText("")
+    selectData.selectByIndex("")
+    selectData.selectByValue("")*/
   }
 
   public static void quitBrowser() {
